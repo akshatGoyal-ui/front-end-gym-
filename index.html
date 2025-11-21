@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitna Ragda Uthna Tagda - Professional Gym &amp; Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+:root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  --space-0: 0;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-normal);
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-16) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-decoration: none;
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-32);
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--color-primary);
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-8);
+}
+
+.mobile-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+  margin: 5px 0;
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--color-bg-1) 0%, var(--color-bg-3) 100%);
+  padding: var(--space-64) var(--space-24);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-24);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.hero p {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-32);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16) var(--space-32);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: none;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn-secondary:hover {
+  background: var(--color-secondary-hover);
+}
+
+/* Features Section */
+.features {
+  padding: var(--space-64) var(--space-24);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-48);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-32);
+}
+
+.feature-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-32);
+  text-align: center;
+  transition: transform var(--duration-normal) var(--ease-standard), box-shadow var(--duration-normal) var(--ease-standard);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-16);
+}
+
+.feature-card h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-12);
+}
+
+.feature-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-32) var(--space-24);
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-surface);
+    flex-direction: column;
+    padding: var(--space-24);
+    gap: var(--space-16);
+    border-bottom: 1px solid var(--color-border);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: var(--font-size-lg);
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Jitna Ragda Uthna Tagda</a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#exercises">Exercises</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Body, Transform Your Life</h1>
+            <p>Jitna Ragda Uthna Tagda - The harder you work, the stronger you become. Start your fitness journey today with professional workout plans, nutrition guidance, and expert exercise routines.</p>
+            <div class="cta-buttons">
+                <a href="#exercises" class="btn btn-primary">View Exercises</a>
+                <a href="#schedule" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">💪</div>
+                <h3>Complete Exercise Library</h3>
+                <p>Comprehensive exercises for all body parts with detailed instructions and form guidance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🥗</div>
+                <h3>Nutrition Plans</h3>
+                <p>Carefully curated meal plans and food recommendations to fuel your fitness goals.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Custom Schedules</h3>
+                <p>Workout routines for all fitness levels - beginner, intermediate, and advanced.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Goal-Oriented Training</h3>
+                <p>Specific programs for muscle gain, fat loss, and overall fitness improvement.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Professional Guidance</h3>
+                <p>Expert-designed workouts following the latest fitness science and methodologies.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Easy to Follow</h3>
+                <p>Clean, organized interface making it simple to track your progress and stay motivated.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Jitna Ragda Uthna Tagda. All rights reserved.</p>
+        <p>Your dedication is your destination.</p>
+    </footer>
+
+    <!-- Exercises Section -->
+    <section id="exercises" class="page-section">
+        <h2 class="section-title">Exercise Library</h2>
+        <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-32);">Target specific muscle groups with our comprehensive exercise database</p>
+        
+        <div class="tab-group">
+            <button class="tab-btn active" data-tab="chest-tab">Chest</button>
+            <button class="tab-btn" data-tab="back-tab">Back</button>
+            <button class="tab-btn" data-tab="arms-tab">Arms</button>
+            <button class="tab-btn" data-tab="legs-tab">Legs</button>
+            <button class="tab-btn" data-tab="shoulders-tab">Shoulders</button>
+            <button class="tab-btn" data-tab="abs-tab">Abs</button>
+        </div>
+
+        <!-- Chest Tab -->
+        <div id="chest-tab" class="tab-content active">
+            <div class="exercise-cards">
+                <div class="exercise-card">
+                    <div class="exercise-img">💪</div>
+                    <h3 class="exercise-title">Bench Press</h3>
+                    <p class="exercise-desc">Lie on bench, lower bar to chest, press up explosively. 4 sets x 8-12 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🏋️</div>
+                    <h3 class="exercise-title">Incline Dumbbell Press</h3>
+                    <p class="exercise-desc">Set bench to 30-45°, press dumbbells up from chest level. 3 sets x 10-12 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🔻</div>
+                    <h3 class="exercise-title">Cable Flyes</h3>
+                    <p class="exercise-desc">Stand between cables, bring handles together with slight bend in elbows. 3 sets x 12-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">💪</div>
+                    <h3 class="exercise-title">Push-Ups</h3>
+                    <p class="exercise-desc">Classic bodyweight exercise. Lower chest to ground, push up. 3 sets x 15-20 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🏋️</div>
+                    <h3 class="exercise-title">Dips</h3>
+                    <p class="exercise-desc">Use parallel bars, lower body by bending elbows, push back up. 3 sets x 10-15 reps.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Tab -->
+        <div id="back-tab" class="tab-content">
+            <div class="exercise-cards">
+                <div class="exercise-card">
+                    <div class="exercise-img">🤸</div>
+                    <h3 class="exercise-title">Pull-Ups</h3>
+                    <p class="exercise-desc">Hang from bar, pull body up until chin over bar. 4 sets x 6-12 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🚣</div>
+                    <h3 class="exercise-title">Barbell Rows</h3>
+                    <p class="exercise-desc">Bend at hips, pull bar to lower chest, squeeze shoulder blades. 4 sets x 8-12 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🏋️</div>
+                    <h3 class="exercise-title">Lat Pulldowns</h3>
+                    <p class="exercise-desc">Pull bar down to upper chest, control the return. 3 sets x 10-12 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">💪</div>
+                    <h3 class="exercise-title">Deadlifts</h3>
+                    <p class="exercise-desc">Lift bar from ground to hip level with straight back. 4 sets x 6-8 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🔻</div>
+                    <h3 class="exercise-title">Seated Cable Rows</h3>
+                    <p class="exercise-desc">Pull handle to torso, squeeze back muscles. 3 sets x 10-12 reps.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arms Tab -->
+        <div id="arms-tab" class="tab-content">
+            <div class="exercise-cards">
+                <div class="exercise-card">
+                    <div class="exercise-img">💪</div>
+                    <h3 class="exercise-title">Barbell Curls</h3>
+                    <p class="exercise-desc">Curl bar up to shoulders, control down. Focus on biceps. 3 sets x 10-12 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🏋️</div>
+                    <h3 class="exercise-title">Tricep Dips</h3>
+                    <p class="exercise-desc">Lower body between bars, push up focusing on triceps. 3 sets x 10-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🔨</div>
+                    <h3 class="exercise-title">Hammer Curls</h3>
+                    <p class="exercise-desc">Curl dumbbells with neutral grip for brachialis. 3 sets x 12-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">💪</div>
+                    <h3 class="exercise-title">Tricep Pushdowns</h3>
+                    <p class="exercise-desc">Push cable attachment down, extend elbows fully. 3 sets x 12-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🏋️</div>
+                    <h3 class="exercise-title">Preacher Curls</h3>
+                    <p class="exercise-desc">Isolate biceps on preacher bench for peak contraction. 3 sets x 10-12 reps.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legs Tab -->
+        <div id="legs-tab" class="tab-content">
+            <div class="exercise-cards">
+                <div class="exercise-card">
+                    <div class="exercise-img">🏋️</div>
+                    <h3 class="exercise-title">Squats</h3>
+                    <p class="exercise-desc">Lower hips back and down, drive through heels to stand. 4 sets x 8-12 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🦾</div>
+                    <h3 class="exercise-title">Leg Press</h3>
+                    <p class="exercise-desc">Push platform away with feet, control the return. 4 sets x 10-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🚶</div>
+                    <h3 class="exercise-title">Lunges</h3>
+                    <p class="exercise-desc">Step forward, lower back knee, push back to standing. 3 sets x 12 reps each leg.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🦵</div>
+                    <h3 class="exercise-title">Leg Curls</h3>
+                    <p class="exercise-desc">Curl legs up, focus on hamstrings. 3 sets x 12-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">👣</div>
+                    <h3 class="exercise-title">Calf Raises</h3>
+                    <p class="exercise-desc">Rise onto toes, squeeze calves at top. 4 sets x 15-20 reps.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shoulders Tab -->
+        <div id="shoulders-tab" class="tab-content">
+            <div class="exercise-cards">
+                <div class="exercise-card">
+                    <div class="exercise-img">🏋️</div>
+                    <h3 class="exercise-title">Overhead Press</h3>
+                    <p class="exercise-desc">Press bar overhead from shoulders, lock out at top. 4 sets x 8-10 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🦅</div>
+                    <h3 class="exercise-title">Lateral Raises</h3>
+                    <p class="exercise-desc">Raise dumbbells to sides until parallel to ground. 3 sets x 12-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🦆</div>
+                    <h3 class="exercise-title">Front Raises</h3>
+                    <p class="exercise-desc">Raise weight in front to shoulder height. 3 sets x 12-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">👋</div>
+                    <h3 class="exercise-title">Reverse Flyes</h3>
+                    <p class="exercise-desc">Bend forward, raise arms out to sides for rear delts. 3 sets x 12-15 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🏋️</div>
+                    <h3 class="exercise-title">Arnold Press</h3>
+                    <p class="exercise-desc">Rotate palms while pressing dumbbells overhead. 3 sets x 10-12 reps.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Abs Tab -->
+        <div id="abs-tab" class="tab-content">
+            <div class="exercise-cards">
+                <div class="exercise-card">
+                    <div class="exercise-img">🤸</div>
+                    <h3 class="exercise-title">Crunches</h3>
+                    <p class="exercise-desc">Lift shoulders off ground, squeeze abs at top. 3 sets x 20-25 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🧍</div>
+                    <h3 class="exercise-title">Planks</h3>
+                    <p class="exercise-desc">Hold body straight in push-up position. 3 sets x 45-60 seconds.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🤺</div>
+                    <h3 class="exercise-title">Russian Twists</h3>
+                    <p class="exercise-desc">Rotate torso side to side with feet elevated. 3 sets x 20 reps each side.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🦵</div>
+                    <h3 class="exercise-title">Leg Raises</h3>
+                    <p class="exercise-desc">Lie on back, raise legs to 90°, lower slowly. 3 sets x 15-20 reps.</p>
+                </div>
+                <div class="exercise-card">
+                    <div class="exercise-img">🚴</div>
+                    <h3 class="exercise-title">Bicycle Crunches</h3>
+                    <p class="exercise-desc">Alternate elbow to opposite knee in cycling motion. 3 sets x 20 reps each side.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="page-section" style="background: var(--color-bg-2);">
+        <h2 class="section-title">Nutrition &amp; Diet</h2>
+        <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-32);">Fuel your body right with proper nutrition for optimal performance</p>
+        
+        <div class="nutrition-categories">
+            <div class="nutrition-card" style="background: var(--color-bg-1);">
+                <div class="nutrition-icon">🥩</div>
+                <h3>Proteins</h3>
+                <ul class="nutrition-list">
+                    <li>Chicken Breast</li>
+                    <li>Eggs</li>
+                    <li>Fish (Salmon, Tuna)</li>
+                    <li>Greek Yogurt</li>
+                    <li>Lean Beef</li>
+                    <li>Tofu &amp; Legumes</li>
+                </ul>
+            </div>
+            <div class="nutrition-card" style="background: var(--color-bg-3);">
+                <div class="nutrition-icon">🍞</div>
+                <h3>Carbohydrates</h3>
+                <ul class="nutrition-list">
+                    <li>Brown Rice</li>
+                    <li>Oats</li>
+                    <li>Sweet Potatoes</li>
+                    <li>Quinoa</li>
+                    <li>Whole Wheat Bread</li>
+                    <li>Fruits (Banana, Berries)</li>
+                </ul>
+            </div>
+            <div class="nutrition-card" style="background: var(--color-bg-6);">
+                <div class="nutrition-icon">🥑</div>
+                <h3>Healthy Fats</h3>
+                <ul class="nutrition-list">
+                    <li>Avocados</li>
+                    <li>Nuts (Almonds, Walnuts)</li>
+                    <li>Olive Oil</li>
+                    <li>Peanut Butter</li>
+                    <li>Chia Seeds</li>
+                    <li>Fatty Fish</li>
+                </ul>
+            </div>
+            <div class="nutrition-card" style="background: var(--color-bg-4);">
+                <div class="nutrition-icon">🥦</div>
+                <h3>Vitamins &amp; Minerals</h3>
+                <ul class="nutrition-list">
+                    <li>Leafy Greens</li>
+                    <li>Broccoli</li>
+                    <li>Carrots</li>
+                    <li>Bell Peppers</li>
+                    <li>Citrus Fruits</li>
+                    <li>Berries</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; font-size: var(--font-size-2xl); margin: var(--space-48) 0 var(--space-24) 0;">Sample Meal Plan</h3>
+        <table class="meal-plan-table">
+            <thead>
+                <tr>
+                    <th>Meal</th>
+                    <th>Muscle Gain</th>
+                    <th>Fat Loss</th>
+                    <th>Timing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Breakfast</strong></td>
+                    <td>4 eggs, oats with banana, milk</td>
+                    <td>3 egg whites, oats, green tea</td>
+                    <td>7:00 AM</td>
+                </tr>
+                <tr>
+                    <td><strong>Mid-Morning</strong></td>
+                    <td>Protein shake, handful of nuts</td>
+                    <td>Apple, 10 almonds</td>
+                    <td>10:00 AM</td>
+                </tr>
+                <tr>
+                    <td><strong>Lunch</strong></td>
+                    <td>Chicken breast, brown rice, vegetables</td>
+                    <td>Grilled fish, quinoa, salad</td>
+                    <td>1:00 PM</td>
+                </tr>
+                <tr>
+                    <td><strong>Pre-Workout</strong></td>
+                    <td>Banana, peanut butter</td>
+                    <td>Banana or apple</td>
+                    <td>4:30 PM</td>
+                </tr>
+                <tr>
+                    <td><strong>Post-Workout</strong></td>
+                    <td>Whey protein shake, sweet potato</td>
+                    <td>Protein shake</td>
+                    <td>6:30 PM</td>
+                </tr>
+                <tr>
+                    <td><strong>Dinner</strong></td>
+                    <td>Lean beef, brown rice, broccoli</td>
+                    <td>Chicken breast, vegetables, salad</td>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td><strong>Before Bed</strong></td>
+                    <td>Casein protein or Greek yogurt</td>
+                    <td>Casein protein (optional)</td>
+                    <td>10:30 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="page-section">
+        <h2 class="section-title">Workout Schedules</h2>
+        <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-32);">Choose a plan that matches your fitness level and goals</p>
+        
+        <div class="schedule-filters">
+            <button class="schedule-filter active" data-filter="all">All Levels</button>
+            <button class="schedule-filter" data-filter="beginner">Beginner</button>
+            <button class="schedule-filter" data-filter="intermediate">Intermediate</button>
+            <button class="schedule-filter" data-filter="advanced">Advanced</button>
+        </div>
+
+        <div class="schedule-cards">
+            <!-- Beginner - Muscle Gain -->
+            <div class="schedule-card" data-level="beginner">
+                <h3 class="schedule-title">Beginner - Muscle Gain Program</h3>
+                <p class="schedule-goal">Goal: Build Foundation &amp; Muscle Mass</p>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Focus</th>
+                            <th>Exercises</th>
+                            <th>Sets x Reps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Chest &amp; Triceps</td>
+                            <td>Bench Press, Incline Press, Dips, Tricep Pushdowns</td>
+                            <td>3 x 10-12</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Back &amp; Biceps</td>
+                            <td>Pull-Ups, Rows, Lat Pulldowns, Barbell Curls</td>
+                            <td>3 x 10-12</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Rest / Cardio</td>
+                            <td>20 min light cardio or complete rest</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Legs</td>
+                            <td>Squats, Leg Press, Lunges, Calf Raises</td>
+                            <td>3 x 12-15</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Shoulders &amp; Abs</td>
+                            <td>Overhead Press, Lateral Raises, Planks, Crunches</td>
+                            <td>3 x 12-15</td>
+                        </tr>
+                        <tr>
+                            <td>Weekend</td>
+                            <td>Rest</td>
+                            <td>Recovery and light activity</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Intermediate - Muscle Gain -->
+            <div class="schedule-card" data-level="intermediate">
+                <h3 class="schedule-title">Intermediate - Muscle Gain Program</h3>
+                <p class="schedule-goal">Goal: Increase Muscle Mass &amp; Strength</p>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Focus</th>
+                            <th>Exercises</th>
+                            <th>Sets x Reps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Chest</td>
+                            <td>Bench Press, Incline DB Press, Cable Flyes, Dips</td>
+                            <td>4 x 8-12</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Back</td>
+                            <td>Deadlifts, Pull-Ups, Barbell Rows, Cable Rows</td>
+                            <td>4 x 8-12</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Shoulders &amp; Abs</td>
+                            <td>Overhead Press, Lateral Raises, Front Raises, Ab Circuit</td>
+                            <td>4 x 10-15</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Legs</td>
+                            <td>Squats, Leg Press, Lunges, Leg Curls, Calf Raises</td>
+                            <td>4 x 10-15</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Arms</td>
+                            <td>Barbell Curls, Hammer Curls, Tricep Dips, Pushdowns</td>
+                            <td>4 x 10-12</td>
+                        </tr>
+                        <tr>
+                            <td>Weekend</td>
+                            <td>Rest / Active Recovery</td>
+                            <td>Light cardio, stretching, or complete rest</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Advanced - Muscle Gain -->
+            <div class="schedule-card" data-level="advanced">
+                <h3 class="schedule-title">Advanced - Muscle Gain Program</h3>
+                <p class="schedule-goal">Goal: Maximum Hypertrophy &amp; Strength</p>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Focus</th>
+                            <th>Exercises</th>
+                            <th>Sets x Reps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Chest &amp; Triceps</td>
+                            <td>Bench Press, Incline BB Press, Flyes, Dips, Close-Grip Press</td>
+                            <td>5 x 6-12</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Back &amp; Biceps</td>
+                            <td>Deadlifts, Pull-Ups, Rows, Lat Pulldowns, Curls Superset</td>
+                            <td>5 x 6-12</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Legs (Quad Focus)</td>
+                            <td>Squats, Front Squats, Leg Press, Leg Extensions, Calves</td>
+                            <td>5 x 8-15</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Shoulders</td>
+                            <td>Overhead Press, Arnold Press, Lateral/Front/Rear Raises</td>
+                            <td>4 x 10-15</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Legs (Hamstring Focus)</td>
+                            <td>Romanian Deadlifts, Leg Curls, Lunges, Glute Work</td>
+                            <td>4 x 10-15</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Arms &amp; Abs</td>
+                            <td>Superset: Biceps/Triceps exercises, Complete Ab Circuit</td>
+                            <td>4 x 12-15</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Rest</td>
+                            <td>Complete recovery</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Beginner - Fat Loss -->
+            <div class="schedule-card" data-level="beginner">
+                <h3 class="schedule-title">Beginner - Fat Loss Program</h3>
+                <p class="schedule-goal">Goal: Burn Fat &amp; Build Endurance</p>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Focus</th>
+                            <th>Workout</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Full Body Circuit</td>
+                            <td>Push-ups, Squats, Rows, Planks (3 rounds)</td>
+                            <td>30 min</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Cardio</td>
+                            <td>Jogging, Cycling or Brisk Walking</td>
+                            <td>30 min</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Full Body Circuit</td>
+                            <td>Lunges, Dips, Pull-ups, Crunches (3 rounds)</td>
+                            <td>30 min</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Cardio</td>
+                            <td>HIIT: 30 sec work, 30 sec rest intervals</td>
+                            <td>20 min</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Full Body Circuit</td>
+                            <td>Combined exercises, focus on major muscle groups</td>
+                            <td>30 min</td>
+                        </tr>
+                        <tr>
+                            <td>Weekend</td>
+                            <td>Active Rest</td>
+                            <td>Walking, yoga, or light activity</td>
+                            <td>20-30 min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Intermediate - Fat Loss -->
+            <div class="schedule-card" data-level="intermediate">
+                <h3 class="schedule-title">Intermediate - Fat Loss Program</h3>
+                <p class="schedule-goal">Goal: Accelerate Fat Loss &amp; Maintain Muscle</p>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Focus</th>
+                            <th>Workout</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Upper Body + Cardio</td>
+                            <td>Chest, Back, Shoulders circuit + 15 min HIIT</td>
+                            <td>45 min</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>HIIT Cardio</td>
+                            <td>Sprint intervals or bike sprints</td>
+                            <td>30 min</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Lower Body + Cardio</td>
+                            <td>Squats, Lunges, Leg Press circuit + 15 min cardio</td>
+                            <td>45 min</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Core &amp; Cardio</td>
+                            <td>Ab exercises + 20 min steady state cardio</td>
+                            <td>40 min</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Full Body Circuit</td>
+                            <td>Compound movements, minimal rest</td>
+                            <td>45 min</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Cardio</td>
+                            <td>Long steady state cardio or sports activity</td>
+                            <td>40-60 min</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Active Recovery</td>
+                            <td>Yoga, stretching, or light walk</td>
+                            <td>30 min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Advanced - Fat Loss -->
+            <div class="schedule-card" data-level="advanced">
+                <h3 class="schedule-title">Advanced - Fat Loss Program</h3>
+                <p class="schedule-goal">Goal: Maximum Fat Loss &amp; Conditioning</p>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Focus</th>
+                            <th>Workout</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Upper Power + HIIT</td>
+                            <td>Heavy compound lifts + 20 min HIIT</td>
+                            <td>60 min</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Lower Power + HIIT</td>
+                            <td>Squats, Deadlifts + 20 min HIIT</td>
+                            <td>60 min</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Metabolic Conditioning</td>
+                            <td>Circuit training, battle ropes, box jumps</td>
+                            <td>45 min</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Upper Hypertrophy</td>
+                            <td>Volume training for upper body + 15 min cardio</td>
+                            <td>60 min</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Lower Hypertrophy</td>
+                            <td>Volume training for legs + 15 min cardio</td>
+                            <td>60 min</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>HIIT &amp; Core</td>
+                            <td>Intense cardio intervals + complete ab workout</td>
+                            <td>45 min</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Active Recovery</td>
+                            <td>Long walk, yoga, mobility work</td>
+                            <td>45 min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page-section" style="background: var(--color-bg-5);">
+        <div class="about-content">
+            <h2 class="about-title">About Jitna Ragda Uthna Tagda</h2>
+            
+            <p class="about-text">
+                <strong>"Jitna Ragda Uthna Tagda"</strong> is a Hindi phrase that translates to "The harder you grind, the stronger you become." This philosophy embodies the core principle of fitness and personal growth - that consistent effort and dedication lead to transformative results.
+            </p>
+            
+            <p class="about-text">
+                Our mission is to provide you with comprehensive fitness resources, from detailed exercise guides to nutrition plans and customized workout schedules. Whether you're a beginner taking your first steps into fitness or an advanced athlete pushing your limits, we have the tools you need to succeed.
+            </p>
+            
+            <p class="about-text">
+                We believe that fitness is not just about physical transformation - it's about building mental resilience, discipline, and a lifestyle that promotes overall well-being. Every rep, every set, and every drop of sweat brings you closer to your goals.
+            </p>
+            
+            <h3 style="margin: var(--space-32) 0 var(--space-16) 0; font-size: var(--font-size-xl);">Our Philosophy</h3>
+            <ul style="color: var(--color-text-secondary); line-height: 1.8; margin-left: var(--space-20);">
+                <li>Consistency over intensity</li>
+                <li>Progressive overload for continuous growth</li>
+                <li>Nutrition is 70% of the battle</li>
+                <li>Recovery is as important as training</li>
+                <li>Mind-muscle connection matters</li>
+                <li>Set goals, track progress, celebrate wins</li>
+            </ul>
+            
+            <h3 style="margin: var(--space-32) 0 var(--space-16) 0; font-size: var(--font-size-xl);">Contact Us</h3>
+            <div class="contact-row">
+                <span class="contact-icon">✉️</span>
+                <span>Email: info@jitnaragdautnatagda.fit</span>
+            </div>
+            <div class="contact-row">
+                <span class="contact-icon">📍</span>
+                <span>Location: Online - Accessible Worldwide</span>
+            </div>
+            <div class="contact-row">
+                <span class="contact-icon">📱</span>
+                <span>Follow us on social media for daily motivation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Jitna Ragda Uthna Tagda. All rights reserved.</p>
+        <p>Your dedication is your destination.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
